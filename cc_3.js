@@ -1,4 +1,5 @@
 // Step 2: Create Customer Records
+
 const customers = [
   {
     name: "John Smith",
@@ -18,6 +19,7 @@ const customers = [
 ];
 
 // Step 3: Add and Remove Data
+
 customers.push({
   name: "Sarah Johnson",
   email: "sarah.johnson@email.com",
@@ -27,10 +29,12 @@ customers.push({
 customers.shift(); // Removes the first customer
 
 // Step 4: Update Customer Info
+
 customers[0].email = "maria.newemail@email.com";
 customers[1].purchases.push("Webcam");
 
 // Step 5: Display Customer Information
+
 customers.forEach(customer => {
   console.log(
     `${customer.name} | Email: ${customer.email} | Total Purchases: ${customer.purchases.length}`
